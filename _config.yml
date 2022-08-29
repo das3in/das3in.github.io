@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlreyes.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: carljreyes
 github_username:  das3in
-copyright: © 2021 Carl Reyes
+copyright: © 2022 Carl Reyes
 
 # Build settings
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
