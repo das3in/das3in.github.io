@@ -14,7 +14,7 @@ down tech debt and I often wonder if this is enough. Still though, there’s som
 acknowledgment that if you never address tech debt it eventually grinds
 progress to a halt.
 
-But there’s another kind of debt I’ve been thinking about lately—one that
+But there’s another kind of debt I’ve been thinking about lately - one that
 doesn’t show up in code reviews or sprint retros. I’m calling it **career debt**.
 
 Career debt is what builds up when engineers go too long without doing
@@ -30,7 +30,7 @@ you can’t ignore: disengagement, low morale, slower iteration and attrition.
 
 I had a recent example of this on my team. We needed to build a temporary event
 queue to solve a specific business problem. The simplest, most pragmatic answer
-was to use a Redis based solution — something we’ve used before, something the
+was to use a Redis based solution - something we’ve used before, something the
 team is fluent in and something that would’ve gotten us a working solution the
 fastest.
 
@@ -40,7 +40,7 @@ with it.
 
 Now, let’s be honest: Kafka is not the ideal tool for a simple event queue.
 It’s complex. It’s operationally heavier. And it likely wasn’t the “right”
-technical decision for the problem at hand. But here’s the thing — it wasn’t a
+technical decision for the problem at hand. But here’s the thing - it wasn’t a
 high-stakes, time-sensitive project. We had some breathing room. And more
 importantly, this was a chance to invest in those engineers.
 
@@ -66,9 +66,7 @@ they’re curious or excited about it. That might look like:
 
 * Spikes or POCs for non-roadmap technologies
 
-* “Engineer’s choice” weeks where people pick their own projects
-
-* Rotations across teams or tech stacks
+* “Innovation” weeks where people pick their own projects
 
 * Internal talks, mentorship, or time to write and share what they’ve learned
 
@@ -80,4 +78,4 @@ distraction from it.
 
 So next time you’re in a planning meeting, think beyond just story points and
 roadmap goals. Ask yourself: are we also allocating time to pay down career
-debt? Because if you’re not—sooner or later—you’re going to feel it.
+debt? Because if you’re not—sooner or later - you’re going to feel it.
