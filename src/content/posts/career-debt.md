@@ -1,6 +1,6 @@
 ---
 title:  "Career Debt: A Hidden Cost of Delivery-Obsessed Engineering Teams"
-description: 'Talking about career debt'
+description: "You plan for technical debt — but what about career debt? When engineers aren’t growing, you’re slowly losing them. Here’s how to recognize and prevent it."
 pubDate: 'May 30 2025'
 ---
 
