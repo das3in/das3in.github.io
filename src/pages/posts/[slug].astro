@@ -1,0 +1,147 @@
+---
+import "../../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import { blogPosts } from "../../data/posts";
+
+export async function getStaticPaths() {
+    const posts = await Astro.glob('./*.md');
+    
+    return posts.map((post) => {
+        const slug = post.file.split('/').pop()?.replace('.md', '');
+        const postData = blogPosts.find(p => p.slug === slug);
+        
+        return {
+            params: { slug },
+            props: { 
+                post: postData,
+                content: post.compiledContent(),
+                frontmatter: post.frontmatter
+            },
+        };
+    });
+}
+
+const { post, content, frontmatter } = Astro.props;
+---
+
+<Layout
+    title={post.title}
+    description={post.excerpt ?? ""}
+    url={`https://carlreyes.com/posts/${post.slug}`}
+>
+    <article>
+        <header>
+            <h1 class="blog-post-title">{post.title}</h1>
+            <time datetime={post.date.toISOString()}>
+                {
+                    post.date.toLocaleDateString("en-US", {
+                        month: "long",
+                        day: "numeric",
+                        year: "numeric",
+                    })
+                }
+            </time>
+        </header>
+        <div class="blog-content" set:html={content}></div>
+        <a href="/" class="back-link">← Back to home</a>
+    </article>
+</Layout>
+
+<style>
+    article {
+        max-width: 65ch;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .blog-content {
+        margin: 2rem 0;
+        line-height: 1.7;
+        color: var(--text-color);
+    }
+
+    .blog-content h1,
+    .blog-content h2,
+    .blog-content h3,
+    .blog-content h4,
+    .blog-content h5,
+    .blog-content h6 {
+        color: var(--text-color);
+        font-family: Georgia, serif;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-content p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .blog-content li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+    }
+
+    .blog-content strong {
+        font-weight: 700;
+        color: var(--text-color);
+    }
+
+    .blog-content blockquote {
+        border-left: 4px solid var(--accent);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: var(--text-secondary);
+    }
+
+    .blog-post-title {
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: Georgia, serif;
+        color: var(--text-color);
+        margin: 0 0 1rem 0;
+        line-height: 1.2;
+    }
+
+    time {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .back-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 3rem;
+        transition: color 0.2s;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+        color: var(--accent-hover);
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        article {
+            padding: 1rem 0;
+        }
+
+        .blog-post-title {
+            font-size: 1.5rem;
+        }
+
+        .blog-content p {
+            font-size: 1rem;
+        }
+    }
+</style>
