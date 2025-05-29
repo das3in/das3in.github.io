@@ -1,0 +1,249 @@
+:root {
+    --container-width: 1024px;
+    --accent: #1caab0;
+    --accent-hover: #0891b2;
+
+    /* Default theme (light) */
+    --bg-color: white;
+    --text-color: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    --hover-bg: #f9fafb;
+
+    font-size: 1em;
+    color-scheme: light;
+}
+
+/* Dark theme overrides when .dark class is applied to html */
+html.dark {
+    --bg-color: #17181c;
+    --text-color: #f9fafb;
+    --text-secondary: #9ca3af;
+    --border-color: #374151;
+    --hover-bg: #1f2937;
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+        sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Typography */
+.font-serif {
+    font-family: Georgia, serif;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+}
+
+.theme-toggle:hover {
+    background-color: var(--hover-bg);
+}
+
+.theme-toggle-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%); /* centers */
+    pointer-events: none;
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Position sun on the left of the arc */
+.sun-icon {
+    left: 0;
+    opacity: 1;
+}
+
+.moon-icon {
+    right: 0;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    transform-origin: center center;
+    transform: rotate(32deg);
+}
+
+/* In dark mode, hide sun and show moon */
+html.dark .sun-icon {
+    opacity: 0;
+}
+
+html.dark .moon-icon {
+    opacity: 1;
+}
+
+/* Paragraphs */
+.intro-paragraph {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.content-paragraph {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+/* Occupation Dropdown */
+.occupation-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.occupation-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+}
+
+.occupation-button:hover {
+    color: var(--accent-hover);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.25rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    min-width: 240px;
+    z-index: 10;
+    display: none;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    background: none;
+    border: 2px solid transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--accent);
+}
+
+/* Blog Posts Section */
+.blog-section {
+    margin-top: 4rem;
+}
+
+.blog-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-post-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    margin: 0 0 0.5rem 0;
+}
+
+.blog-post-link {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.blog-post-link:hover {
+    color: #1d4ed8;
+}
+
+.blog-post-date {
+    color: var(--text-secondary);
+    margin: 0;
+}

@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HomePage from "../components/HomePage";
+import { occupations } from "../data/occupations";
+import { blogPosts } from "../data/posts";
+---
+
+<Layout title="thoughts and feelings">
+    <HomePage client:load occupations={occupations} blogPosts={blogPosts} />
+</Layout>
