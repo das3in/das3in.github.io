@@ -77,7 +77,7 @@ We were on that tee in seconds.
 Jay striped an iron. I topped a 5-wood that somehow stayed on the fairway. But
 we were playing. *Together*. At the Old Course. With no one else around.
 
-![First tee](../../assets/old-course/1-tee.jpg)
+![First tee](../../assets/old-course/first-tee.jpg)
 
 ## The Final Stretch
 
