@@ -24,4 +24,12 @@ export const blogPosts: BlogPost[] = [
     tags: ["software engineering leader"],
     slug: "career-debt",
   },
+  {
+    title: "The Last Tee Time: How I Played The Old Course at St. Andrews",
+    excerpt:
+      "The story of how I stood in line, drank with Canadians and almost didn't play The Old Course during my bachelor party.",
+    date: new Date("2025-06-01"),
+    tags: ["golfer"],
+    slug: "the-old-course",
+  },
 ];
