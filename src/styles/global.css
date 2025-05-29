@@ -260,6 +260,10 @@ html.dark .moon-icon {
     margin: 0;
 }
 
+.blog-post.description {
+    font-size: 0.95em;
+}
+
 .blog-content img {
     max-width: 100%;
     max-height: 500px;
@@ -329,4 +333,13 @@ html.dark .moon-icon {
 .blog-content h6 {
     font-size: 1rem;
     font-weight: 600;
+}
+
+.contact-link {
+    color: var(--text-color);
+    opacity: 80%;
+}
+
+.contact-link:hover {
+    color: var(--accent-hover);
 }

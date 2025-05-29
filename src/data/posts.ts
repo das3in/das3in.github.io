@@ -17,17 +17,17 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
 // For backwards compatibility, keep the static export but note it's deprecated
 export const blogPosts: BlogPost[] = [
   {
-    title: "Career Debt: A Hidden Cost of Delivery-Obsessed Engineering Teams",
+    title: "career debt: a hidden cost of delivery-obsessed engineering teams",
     excerpt:
-      "Career Debt: A Hidden Cost of Delivery-Obsessed Engineering Teams",
+      "you plan for technical debt — but what about career debt? when engineers aren’t growing, you’re slowly losing them. here’s how to recognize and prevent it.",
     date: new Date("2025-05-30"),
     tags: ["software engineering leader"],
     slug: "career-debt",
   },
   {
-    title: "The Last Tee Time: How I Played The Old Course at St. Andrews",
+    title: "the last tee time: how i played the old course at st. andrews",
     excerpt:
-      "The story of how I stood in line, drank with Canadians and almost didn't play The Old Course during my bachelor party.",
+      "the story of how i stood in line, drank with canadians and almost didn't play the old course during my bachelor party.",
     date: new Date("2025-06-01"),
     tags: ["golfer"],
     slug: "the-old-course",

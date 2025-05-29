@@ -34,6 +34,7 @@ export default function BlogPostList({
               </a>
             </h3>
             <p className="blog-post-date">{formatDate(post.date)}</p>
+            <p className="blog-post-description">{post.excerpt}</p>
           </div>
         ))}
       </div>
