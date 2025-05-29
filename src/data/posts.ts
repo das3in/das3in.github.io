@@ -5,11 +5,11 @@ import type { BlogPost } from "../types";
 export async function getBlogPosts(): Promise<BlogPost[]> {
   const posts = await getCollection("posts");
 
-  return posts.map((post) => ({
-    title: post.data.title,
-    excerpt: post.data.description,
-    date: post.data.pubDate,
-    tags: post.data.tags || [],
+  return posts.map((post: BlogPost) => ({
+    title: post.title,
+    excerpt: post.excerpt,
+    date: post.date,
+    tags: post.tags || [],
     slug: post.slug,
   }));
 }

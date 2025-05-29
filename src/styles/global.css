@@ -250,7 +250,7 @@ html.dark .moon-icon {
 }
 
 .blog-post-link:hover {
-    color: #1d4ed8;
+    color: var(--accent-hover);
 }
 
 .blog-post-date {
