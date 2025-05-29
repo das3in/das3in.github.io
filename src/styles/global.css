@@ -123,6 +123,7 @@ strong {
 .sun-icon {
     left: 0;
     opacity: 1;
+    color: var(--text-color);
 }
 
 .moon-icon {
@@ -130,6 +131,7 @@ strong {
     opacity: 0;
     width: 24px;
     height: 24px;
+    color: var(--text-color);
     transform-origin: center center;
     transform: rotate(32deg);
 }
