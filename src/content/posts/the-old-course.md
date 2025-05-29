@@ -4,24 +4,35 @@ description: "The story of how I stood in line, drank with Canadians and almost 
 pubDate: 'June 1 2025'
 ---
 
-# Playing the Old Course at St. Andrews: A 24-Hour Odyssey
-
-A year ago today, I played the Old Course at St. Andrews. Not just played it—I *earned* it. But the story starts a little before that.
+A year ago today, I played the Old Course at St. Andrews. Not just played it—I
+*earned* it. But the story starts a little before that.
 
 ## The Bachelor Party That Went North (Literally)
 
-For my bachelor party, a group of friends and I flew to Scotland. Only two of us actually golf, but we sprinkled in just enough golf to keep things interesting—alongside the real stars of the trip: sightseeing, scotch, and general shenanigans.
+For my bachelor party, a group of friends and I flew to Scotland. Only two of us
+actually golf, but we sprinkled in just enough golf to keep things
+interesting—alongside the real stars of the trip: sightseeing, scotch, and
+general shenanigans.
 
-Jay and I kicked things off by playing North Berwick on the first day. It’s still my favorite golf course in the world. The views, the quirks, the holes that feel like they were designed by nature itself—it’s just magic.
-![North Berwick](INSERT_PICTURE_HERE)
+Jay and I kicked things off by playing North Berwick on the first day. It’s
+still my favorite golf course in the world. The views, the quirks, the holes
+that feel like they were designed by nature itself—it’s just magic. ![North
+Berwick](https://www.northberwickgolfclub.com/images/thumbs/sites/northberwick/940x0/1/SCOTTISHGOLFPHOTOGRAPHY-NBWESTLINKS0007.jpg)
 
-That afternoon, we wandered around Edinburgh. We somehow found a cricket batting cage (note: not our sport), sampled our way through a few whisky bars, and ended the night at a Brazilian steakhouse because, why not?
+That afternoon, we wandered around Edinburgh. We somehow found a cricket batting
+cage (note: not our sport), sampled our way through a few whisky bars, and ate
+at a Brazilian steakhouse because, why not?
 
 ## The Midnight Pilgrimage to St. Andrews
 
-At 10:30pm, Jay and I packed up and hit the road, leaving the cobbled streets of Edinburgh for the birthplace of golf. It’s about a 90-minute drive to St. Andrews, and we arrived just after midnight. We parked by The Old Course Hotel, slung our bags over our shoulders, and walked up the 18th fairway in the dark.
+At 10:30pm, Jay and I packed up and hit the road, leaving the cobbled streets of
+Edinburgh for the home of golf. It’s about a 90-minute drive to St. Andrews, and
+we arrived just after midnight. We parked by The Old Course Hotel and walked up
+the 18th fairway in the dark.
 
-We were heading for the Old Pavilion to get in the singles queue—a historic and slightly masochistic process that, until recently, was your best chance of getting onto the Old Course without a tee time.
+We were heading for the Old Pavilion to get in the singles queue—a historic and
+slightly masochistic process that, until recently, was your best chance of
+getting onto the Old Course without a tee time.
 
 ### How the Singles Queue Worked (RIP)
 
@@ -63,7 +74,10 @@ Then the starter walked up to us.
 
 We were on that tee in seconds.
 
-Jay striped an iron. I topped a 5-wood that somehow stayed on the fairway. But we were playing. *Together*. At the Old Course. With no one else around.
+Jay striped an iron. I topped a 5-wood that somehow stayed on the fairway. But
+we were playing. *Together*. At the Old Course. With no one else around.
+
+![First tee](../../assets/old-course/1-tee.jpg)
 
 ## The Final Stretch
 
@@ -75,7 +89,7 @@ Best meal of my life.
 
 The sun started to dip low on 17—the famous **Road Hole**—and we used phone flashlights to find our tee shots. By 18, it was pitch black. We lit up the tee box with our phones and hit our final shots into the night.
 
-![The Road Hole](../../assets/17-tee.jpg)
+![The Road Hole](../../assets/old-course/17-tee.jpg)
 
 Jay stuck one. I ended up in the Valley of Sin.
 
@@ -83,7 +97,7 @@ We both made our putts.
 
 ## Exhausted, Exhilarated, Grateful
 
-![Finished](../../assets/finished.jpg)
+![Finished](../../assets/old-course/finished.jpg)
 
 We hugged on the 18th green—hungry, dehydrated, sleepless, euphoric.
 
